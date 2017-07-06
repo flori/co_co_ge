@@ -13,7 +13,7 @@ class CoCoGe::CodeGenerator
       @length = (Math.log(1 << @bits) / Math.log(@symbols.size)).floor
     else
       @length = length
-      @bits = (Math.log(@symbols.size ** @length) / Math.log(2)).ceil
+      @bits = (Math.log(@symbols.size ** @length) / Math.log(2)).floor
     end
 
     check_arguments
@@ -30,7 +30,7 @@ class CoCoGe::CodeGenerator
   attr_reader :parts_per_word
 
   def capacity
-    2 ** bits
+    @symbols.size ** @length
   end
 
   def generate(bytes: generate_bytes)

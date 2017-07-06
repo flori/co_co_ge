@@ -5,8 +5,12 @@ describe CoCoGe::CodeGenerator do
     allow(generator).to receive(:generate_bytes).and_return 'abdef'.bytes
   end
 
+  let :symbols do
+    0..9
+  end
+
   let :generator do
-    described_class.new symbols: (0..9), length: 5
+    described_class.new symbols: symbols, length: 5
   end
 
   context 'with bits as argument' do
@@ -23,7 +27,7 @@ describe CoCoGe::CodeGenerator do
     end
 
     it 'has correct capacity' do
-      expect(generator.capacity).to eq 2 ** 40
+      expect(generator.capacity).to eq 10 ** 12
     end
   end
 
@@ -34,7 +38,7 @@ describe CoCoGe::CodeGenerator do
 
     describe 'bits and length' do
       it 'can compute the bits that can be expressed' do
-        expect(generator.bits).to eq 17
+        expect(generator.bits).to eq 7
       end
 
       it 'has the correct length' do
@@ -42,7 +46,7 @@ describe CoCoGe::CodeGenerator do
       end
 
       it 'has correct capacity' do
-        expect(generator.capacity).to eq 2 ** 17
+        expect(generator.capacity).to eq 3 ** 5
       end
     end
 
@@ -82,7 +86,7 @@ describe CoCoGe::CodeGenerator do
 
     describe 'bits and length' do
       it 'can compute the bits that can be expressed' do
-        expect(generator.bits).to eq 17
+        expect(generator.bits).to eq 23
       end
 
       it 'has the correct length' do
@@ -90,7 +94,7 @@ describe CoCoGe::CodeGenerator do
       end
 
       it 'has correct capacity' do
-        expect(generator.capacity).to eq 2 ** 17
+        expect(generator.capacity).to eq 26 ** 5
       end
     end
 
