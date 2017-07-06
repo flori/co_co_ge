@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.email = "flori@ping.de".freeze
   s.extra_rdoc_files = ["README.md".freeze, "lib/co_co_ge.rb".freeze, "lib/co_co_ge/code_generator.rb".freeze, "lib/co_co_ge/ngrams_symbol_generator.rb".freeze, "lib/co_co_ge/version.rb".freeze, "lib/co_co_ge/words_symbol_generator.rb".freeze]
   s.files = [".gitignore".freeze, ".travis.yml".freeze, ".utilsrc".freeze, "COPYING".freeze, "Gemfile".freeze, "README.md".freeze, "Rakefile".freeze, "VERSION".freeze, "co_co_ge.gemspec".freeze, "code.gemspec".freeze, "lib/co_co_ge.rb".freeze, "lib/co_co_ge/code_generator.rb".freeze, "lib/co_co_ge/ngrams_symbol_generator.rb".freeze, "lib/co_co_ge/version.rb".freeze, "lib/co_co_ge/words_symbol_generator.rb".freeze, "spec/co_co_ge/code_generator_spec.rb".freeze, "spec/co_co_ge/ngrams_symbol_generator_spec.rb".freeze, "spec/co_co_ge/words_symbol_generator_spec.rb".freeze, "spec/spec_helper.rb".freeze]
-  s.homepage = "http://flori.github.com/co_co_ge".freeze
+  s.homepage = "https://github.com/flori/co_co_ge".freeze
   s.rdoc_options = ["--title".freeze, "CoCoGe".freeze, "--main".freeze, "README.md".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 2.3".freeze)
   s.rubygems_version = "2.6.11".freeze

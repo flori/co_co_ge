@@ -6,7 +6,7 @@ GemHadar do
   name        'co_co_ge'
   author      'Florian Frank'
   email       'flori@ping.de'
-  homepage    "http://flori.github.com/#{name}"
+  homepage    "https://github.com/flori/#{name}"
   summary     'Create a (un-)readable coupon code'
   description 'This library creates (un-)readable coupon codes.'
   test_dir    'spec'
