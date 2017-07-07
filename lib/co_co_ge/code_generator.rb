@@ -2,7 +2,7 @@ require 'securerandom'
 
 class CoCoGe::CodeGenerator
   def initialize(symbols:, bits: nil, length: nil, separator: nil, parts_per_word: nil)
-    @symbols        = symbols.to_a
+    @symbols        = symbols.to_a.uniq
     @separator      = separator.to_s
     @parts_per_word = parts_per_word
 
@@ -71,7 +71,6 @@ class CoCoGe::CodeGenerator
   end
 
   def check_arguments
-    @symbols.uniq!
     @symbols.size.between?(1, 255) or raise ArgumentError,
       "pass between 1 and 255 symbols, was #{@symbols.size}"
     @symbols.map!(&:to_s)

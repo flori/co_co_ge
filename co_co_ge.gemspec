@@ -1,18 +1,18 @@
 # -*- encoding: utf-8 -*-
-# stub: co_co_ge 0.0.1 ruby lib
+# stub: co_co_ge 0.0.2 ruby lib
 
 Gem::Specification.new do |s|
   s.name = "co_co_ge".freeze
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib".freeze]
   s.authors = ["Florian Frank".freeze]
-  s.date = "2017-07-06"
+  s.date = "2017-07-07"
   s.description = "This library creates (un-)readable coupon codes.".freeze
   s.email = "flori@ping.de".freeze
   s.extra_rdoc_files = ["README.md".freeze, "lib/co_co_ge.rb".freeze, "lib/co_co_ge/code_generator.rb".freeze, "lib/co_co_ge/ngrams_symbol_generator.rb".freeze, "lib/co_co_ge/version.rb".freeze, "lib/co_co_ge/words_symbol_generator.rb".freeze]
-  s.files = [".gitignore".freeze, ".travis.yml".freeze, ".utilsrc".freeze, "COPYING".freeze, "Gemfile".freeze, "README.md".freeze, "Rakefile".freeze, "VERSION".freeze, "co_co_ge.gemspec".freeze, "code.gemspec".freeze, "lib/co_co_ge.rb".freeze, "lib/co_co_ge/code_generator.rb".freeze, "lib/co_co_ge/ngrams_symbol_generator.rb".freeze, "lib/co_co_ge/version.rb".freeze, "lib/co_co_ge/words_symbol_generator.rb".freeze, "spec/co_co_ge/code_generator_spec.rb".freeze, "spec/co_co_ge/ngrams_symbol_generator_spec.rb".freeze, "spec/co_co_ge/words_symbol_generator_spec.rb".freeze, "spec/spec_helper.rb".freeze]
+  s.files = [".gitignore".freeze, ".travis.yml".freeze, ".utilsrc".freeze, "COPYING".freeze, "Gemfile".freeze, "README.md".freeze, "Rakefile".freeze, "VERSION".freeze, "co_co_ge.gemspec".freeze, "lib/co_co_ge.rb".freeze, "lib/co_co_ge/code_generator.rb".freeze, "lib/co_co_ge/ngrams_symbol_generator.rb".freeze, "lib/co_co_ge/version.rb".freeze, "lib/co_co_ge/words_symbol_generator.rb".freeze, "spec/co_co_ge/code_generator_spec.rb".freeze, "spec/co_co_ge/ngrams_symbol_generator_spec.rb".freeze, "spec/co_co_ge/words_symbol_generator_spec.rb".freeze, "spec/spec_helper.rb".freeze]
   s.homepage = "https://github.com/flori/co_co_ge".freeze
   s.rdoc_options = ["--title".freeze, "CoCoGe".freeze, "--main".freeze, "README.md".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 2.3".freeze)
