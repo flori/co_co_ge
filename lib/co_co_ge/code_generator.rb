@@ -6,6 +6,8 @@ class CoCoGe::CodeGenerator
     @separator      = separator.to_s
     @parts_per_word = parts_per_word
 
+    check_arguments
+
     !!bits ^ !!length or raise ArgumentError,
       "either bits or length parameter is required"
     if bits
@@ -15,8 +17,6 @@ class CoCoGe::CodeGenerator
       @length = length
       @bits = (Math.log(@symbols.size ** @length) / Math.log(2)).floor
     end
-
-    check_arguments
   end
 
   attr_reader :symbols
