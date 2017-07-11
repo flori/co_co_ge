@@ -17,6 +17,7 @@ GemHadar do
   title       "#{name.camelize}"
 
   required_ruby_version '>= 2.3'
+  dependency 'tins'
   development_dependency 'rake'
   development_dependency 'rspec'
 end
