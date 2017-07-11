@@ -96,6 +96,12 @@ describe CoCoGe::CodeGenerator do
       it 'has correct capacity' do
         expect(generator.capacity).to eq 26 ** 5
       end
+
+      it 'can compute duration' do
+        expect(
+          generator.duration(count: 1_000, attempts_per_second: 26).to_s
+        ).to eq '00:07:36'
+      end
     end
 
     context 'singlecharacter symbols with separator' do

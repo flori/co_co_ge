@@ -33,6 +33,10 @@ class CoCoGe::CodeGenerator
     @symbols.size ** @length
   end
 
+  def duration(count:, attempts_per_second:)
+    Tins::Duration.new(capacity / count / attempts_per_second)
+  end
+
   def generate(bytes: generate_bytes)
     parts = symbolize(bytes: bytes)
     if @parts_per_word

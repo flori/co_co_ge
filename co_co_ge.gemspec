@@ -1,14 +1,14 @@
 # -*- encoding: utf-8 -*-
-# stub: co_co_ge 0.0.3 ruby lib
+# stub: co_co_ge 0.0.4 ruby lib
 
 Gem::Specification.new do |s|
   s.name = "co_co_ge".freeze
-  s.version = "0.0.3"
+  s.version = "0.0.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib".freeze]
   s.authors = ["Florian Frank".freeze]
-  s.date = "2017-07-07"
+  s.date = "2017-07-11"
   s.description = "This library creates (un-)readable coupon codes.".freeze
   s.email = "flori@ping.de".freeze
   s.extra_rdoc_files = ["README.md".freeze, "lib/co_co_ge.rb".freeze, "lib/co_co_ge/code_generator.rb".freeze, "lib/co_co_ge/ngrams_symbol_generator.rb".freeze, "lib/co_co_ge/version.rb".freeze, "lib/co_co_ge/words_symbol_generator.rb".freeze]
